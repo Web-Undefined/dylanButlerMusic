@@ -23,7 +23,7 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="javascript:void(0);" class="scrolly">Bands</a></li>
-					<li><a href="">Dates</a></li>
+					<li><a href="javascript:void(0);" id="toDates">Dates</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -35,7 +35,7 @@
 				these spots<br />
 				that sounds cool</h2>
 			<ul class="actions special">
-				<li><a href="#" class="button large">See All Bands</a></li>
+				<li><a href="javascript:void(0);" class="button large" id="band2">See All Bands</a></li>
 			</ul>
 		</section>
 
@@ -46,7 +46,7 @@
 				<p>We go ahead n write something here, I'm not sure what but maybe you'd have some insight when I show
 					you this.</p>
 				<ul class="actions special">
-					<li><a href="#" class="button">Click Here</a></li>
+					<li><a href="javascript:void(0);" class="button" id="toBooking">Click Here</a></li>
 				</ul>
 			</section>
 			<section>
@@ -54,7 +54,7 @@
 				<p>We go ahead n write something here, I'm not sure what but maybe you'd have some insight when I show
 					you this.</p>
 				<ul class="actions special">
-					<li><a href="#" class="button">Videos</a></li>
+					<li><a href="https://www.youtube.com/user/Zildjian36tube" class="button">Videos</a></li>
 				</ul>
 			</section>
 		</section>
@@ -100,6 +100,50 @@
 			</footer>-->
 		</section>
 
+		<div id="wrapper">
+			<section id="dateTable">
+				<h2 style="text-align: center; padding-top: 1em;">Upcoming Shows</h2>
+				<div class="table-wrapper">
+					<table>
+						<thead>
+							<tr>
+								<th class="tableSpacing">Venue</th>
+								<th>Date</th>
+								<th>Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tableSpacing"><a href="#">Someplace Goes Here</a></td>
+								<td>12/26/2021</td>
+								<td>7:00PM - 10:00PM</td>
+							</tr>
+							<tr>
+								<td class="tableSpacing"><a href="#">Someplace Goes Here</a></td>
+								<td>12/27/2021</td>
+								<td>7:00PM - 10:00PM</td>
+							</tr>
+							<tr>
+								<td class="tableSpacing"><a href="#">Someplace Goes Here</a></td>
+								<td>12/29/2021</td>
+								<td>7:00PM - 10:00PM</td>
+							</tr>
+							<tr>
+								<td class="tableSpacing"><a href="#">Someplace Goes Here</a></td>
+								<td>12/31/2021</td>
+								<td>7:00PM - 10:00PM</td>
+							</tr>
+							<tr>
+								<td class="tableSpacing"><a href="#">Someplace Goes Here</a></td>
+								<td>1/2/2022</td>
+								<td>7:00PM - 10:00PM</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</div>
+
 		<!-- Footer -->
 		<section id="footer">
 			<h2>Contact Me</h2>
@@ -127,9 +171,12 @@
 				</div>
 			</form>
 			<ul class="icons">
-				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+				<li><a href="https://www.facebook.com/DylanButler36" class="icon brands fa-facebook-f"><span
+							class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/dyyylan36/?hl=en" class="icon brands fa-instagram"><span
+							class="label">Instagram</span></a></li>
+				<li><a href="https://www.youtube.com/user/Zildjian36tube" class="icon brands fa-youtube"><span
+							class="label">Youtube</span></a></li>
 			</ul>
 		</section>
 
@@ -152,6 +199,30 @@
 			$("html, body").animate(
 				{
 					scrollTop: $(".style2").offset().top
+				},
+				1000
+			);
+		});</script>
+	<script>$("#band2").click(function () {
+			$("html, body").animate(
+				{
+					scrollTop: $(".style2").offset().top
+				},
+				1000
+			);
+		});</script>
+	<script>$("#toBooking").click(function () {
+			$("html, body").animate(
+				{
+					scrollTop: $("#footer").offset().top
+				},
+				1000
+			);
+		});</script>
+	<script>$("#toDates").click(function () {
+			$("html, body").animate(
+				{
+					scrollTop: $("#dateTable").offset().top
 				},
 				1000
 			);

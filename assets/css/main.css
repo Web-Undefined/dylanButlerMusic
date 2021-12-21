@@ -3431,3 +3431,7 @@ button:disabled:active,
         width: calc(100% + 3em);
     }
 }
+
+.tableSpacing {
+    padding-left: 1em;
+}
