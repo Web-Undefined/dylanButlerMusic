@@ -7,9 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="shortcut icon" type="image/png" href="images/DBIcon.png" />
+	<script>
+		window.onload = function () {
+			var context = new AudioContext();
+		}
+	</script>
 </head>
 
 <body class="is-preload">
+
+	<audio loop autoplay id="my_audio">
+		<source src="myAudio.wav" type="audio/wav" />
+	</audio>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -53,7 +62,7 @@
 				<h3>Need a booking?</h3>
 				<p>Click below and fill out the form and I'll be back to you soon!</p>
 				<ul class="actions special">
-					<li><a href="javascript:void(0);" class="button" id="toBooking">Click Here</a></li>
+					<li><a href="javascript:void(0);" class="button" id="toBooking1">Click Here</a></li>
 				</ul>
 			</section>
 			<section>
@@ -149,7 +158,7 @@
 
 		<div id="wrapper">
 			<section id="dateTable">
-				<h2 style="text-align: center; padding-top: 1em;">Upcoming Shows</h2>
+				<h2 style="text-align: center; padding-top: 1em;">Social Media</h2>
 				<footer class="major">
 					<ul class="icons">
 						<li><a href="https://www.facebook.com/DylanButler36" class="icon brands fa-facebook-f"><span
@@ -369,6 +378,14 @@
 				1000
 			);
 		});</script>
+	<script>$("#toBooking1").click(function () {
+			$("html, body").animate(
+				{
+					scrollTop: $("#footer").offset().top
+				},
+				1000
+			);
+		});</script>
 	<script>$("#toDates").click(function () {
 			$("html, body").animate(
 				{
@@ -377,6 +394,12 @@
 				1000
 			);
 		});</script>
+
+	<script type="text/javascript">
+		window.onclick = function () {
+			document.getElementById("my_audio").play();
+		}
+	</script>
 
 </body>
 
